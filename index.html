@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    
+    <!--section 1 nav menu-->
+
+    <nav>
+        <div class="container">
+            <div class="logo">My Logo</div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Cari...">
+            </div>
+        </div>
+    </nav>
+    <!--section 2 deskripsi dan foto profil-->
+    <section id="profile">
+        <div class="container">
+            <img src="a/wonderhoy.png" alt="profil" class="profile-photo">
+            <h2>Naufal</h2>
+            <p>
+                Saya programmer magang yang sedang belajar coding di Sabr Web.
+            </p>
+        </div>
+    </section>
+
+    <!--section 3 about me-->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Saya belajar programming sejak SMP dan karena hanya bisa berteori tanpa praktek saya kurang
+                memahami apa yang saya pelajari saat itu, saya bisa praktek saat memasuki SMK.
+            </p>
+        </div>
+    </section>
+
+    <!--section 4 skill-->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <label for="html-css">HTML & CSS</label>
+                <progress id="html-css" value="90" max="100"></progress>
+            </div>
+        <div class="skill">
+            <label for="php">PHP</label>
+            <progress id="php" value="80" max="100"></progress>
+        </div>
+        <div class="skill">
+            <label for="basket">Basket</label>
+            <progress id="basket" value="70" max="100"></progress>
+        </div>
+        <div class="skill">
+            <label for="godot">Godot Engine</label>
+            <progress id="godot" value="40" max="100"></progress>
+        </div>
+    </section>
+
+    <!--section 5 portofolio-->
+    <section id="portfolio">
+        <div class="container">
+            <h2>
+                Portofolio
+            </h2>
+            <div class="portfolio-container">
+                   <div class="portfolio-item">
+                       <img src="a/1.png" alt="1" >
+                       <div class="portfolio-info">
+                           <h3>Latihan</h3>
+                           <p>Gambar ini diambil saat saya sedang belajar dasar-dasar HTML</p>
+                       </div>
+                   </div>
+                   <div class="portfolio-item">
+                       <img src="a/css.png" alt="2">
+                       <div class="portfolio-info">
+                           <h3>Web Dasar</h3>
+                           <p>Ini dilakukan saat saya sedang latihan membuat web dasar menggunakan CSS dan HTML.</p>
+                       </div>
+                   </div>
+                   <div class="portfolio-item">
+                       <img src="a/inputjs.png" alt="3" >
+                       <div class="portfolio-info">
+                           <h3>Form Input</h3>
+                           <p>form input ini dibuat dengan gabungan antara HTML dan JS</p>
+                       </div>
+                   </div>
+            </div>
+    </section>
+
+    <!-- Section 6: Blog -->
+    <section id="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-container">
+                <div class="blog-item">
+                    <img src="a/tabel.png" alt="blog 1" >
+                    <h3>Praktek Dasar HTML</h3>
+                    <button>Learn More</button>
+                </div>
+                    <div class="blog-item">
+                        <img src="a/dasar.png" alt="blog 2" >
+                        <h3>Praktek CSS</h3>
+                        <button>Learn More</button>
+                    </div>
+                        <div class="blog-item">
+                            <img src="a/web.png" alt="blog 3" >
+                            <h3>Praktek Membuat Halaman Portofolio</h3>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Section 7: kontak -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-row">
+                <div class="contact-info">
+                    <p>Email: nhanifwis123@gmail.com</p>
+                    <br> <br>
+                    <p>Phone: +62 896 7224 9755</p>
+                    <br> <br>
+                    <p>Location: Bantul, Indonesia</p>
+                </div>
+                <div class="contact-form">
+                    <form action="store.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Nama:</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="massage">Massage:</label>
+                            <textarea name="massage" id="massage"></textarea>
+                        </div>
+                        <button type="submit">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>Created with love Magang Soraya 2024</p>
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
