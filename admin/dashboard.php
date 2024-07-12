@@ -35,6 +35,9 @@ if (!isset($_SESSION['admin'])) {
                 <li>
                     <a href="inbox.php">Inbox</a><br>
                 </li>
+                <li>
+                    <a href="logout.php">Logout</a><br>
+                </li>
             </ul>
         </div>
     </nav>
