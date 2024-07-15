@@ -11,6 +11,6 @@ $admin_id = $_GET['id'];
 $query = "DELETE FROM admin WHERE id='$admin_id'";
 mysqli_query($conn, $query);
 
-header('Location: list_admin.php');
+header('Location: dashboard.php');
 exit;
 ?>

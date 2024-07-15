@@ -9,5 +9,5 @@ if (!isset($_SESSION['admin'])) {
 $id = $_GET['id'];
 $query = "DELETE FROM kontak WHERE idpesan='$id'";
 mysqli_query($conn, $query);
-header('Location: inbox.php');
+header('Location: dashboard.php');
 ?>

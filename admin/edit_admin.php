@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $query = "UPDATE admin SET username='$username', password='$password', email='$email', nama_lengkap='$nama_lengkap' WHERE id='$admin_id'";
     mysqli_query($conn, $query);
 
-    header('Location: list_admin.php');
+    header('Location: dashboard.php');
     exit;
 }
 ?>

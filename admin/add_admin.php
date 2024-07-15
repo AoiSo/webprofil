@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $query = "INSERT INTO admin (username, password, email, nama_lengkap) VALUES ('$username', '$password', '$email', '$nama_lengkap')";
     mysqli_query($conn, $query);
 
-    header('Location: list_admin.php');
+    header('Location: dashboard.php');
     exit;
 }
 ?>

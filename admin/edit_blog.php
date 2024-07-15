@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     mysqli_query($conn, $sql);
-    header('Location: list_blog.php');
+    header('Location: dashboard.php');
 }
 ?>
 

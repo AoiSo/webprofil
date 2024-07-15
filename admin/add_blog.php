@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (move_uploaded_file($_FILES['thumbnail']['tmp_name'], $target)) {
         $sql = "INSERT INTO blog (title, content, thumbnail) VALUES ('$title', '$content', '$thumbnail')";
         if (mysqli_query($conn, $sql)) {
-            header('Location: list_blog.php');
+            header('Location: dashboard.php');
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }

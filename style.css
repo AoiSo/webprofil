@@ -1,16 +1,20 @@
-/* default styles */
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
+/* Body and container styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: lightslategray;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
@@ -23,7 +27,6 @@ body {
 /* Nav Menu */
 nav {
     background: papayawhip;
-
     color: black;
     padding: 1rem 0;
 }
@@ -32,7 +35,7 @@ nav .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 15px solid lightcoral;
+    border: 5px solid lightcoral;
 }
 
 .logo {
@@ -61,6 +64,7 @@ nav .container {
 .social-icons {
     list-style: none;
     display: flex;
+    align-items: right;
 }
 
 .social-icons li {
@@ -84,7 +88,6 @@ nav .container {
     text-align: center;
     padding: 2rem 0;
     background: aqua;
-
 }
 
 .profile-photo {
@@ -117,7 +120,7 @@ nav .container {
 }
 
 #about p {
-    text-align: center;
+    text-align: left;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -178,7 +181,7 @@ progress::-webkit-progress-value {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    border: 15px solid lightcoral;
+    border: 5px solid lightcoral;
 }
 
 .portfolio-item {
@@ -270,7 +273,7 @@ progress::-webkit-progress-value {
     min-height: 55vh; 
     padding: 2rem 0;
     background: seashell;
-    border: 15px solid lightcoral;
+    border: 5px solid lightcoral;
 }
 
 #contact h2 {
